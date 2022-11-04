@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "20221102faiss"
+version = "0.1.0"
+description = ""
+authors = ["Yuki Okuda <yanagi.ayase@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyter = "^1.0.0"
+gensim = "^4.2.0"
+faiss = {path = "/home/yag_ays/local/src/faiss/build/faiss/python"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^22.10.0"}
+ipython = "^8.6.0"
+ipdb = "^0.13.9"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+tox = "^3.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
